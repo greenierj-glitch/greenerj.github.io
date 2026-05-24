@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 
-/* HEADER / HERO */
+/* HEADER */
 header {
   height: 100vh;
   display: flex;
@@ -42,7 +42,6 @@ header {
   margin-top: 15px;
 }
 
-/* SECTIONS */
 section {
   padding: 80px 10%;
 }
@@ -52,7 +51,7 @@ section {
   font-size: 38px;
 }
 
-/* SERVICES GRID */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -67,7 +66,18 @@ section {
   box-shadow: 0 15px 40px rgba(0,0,0,.1);
 }
 
-/* BEFORE / AFTER */
+/* BEFORE / AFTER (2 IMAGES ONLY STYLE) */
+.before-after .grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .before-after .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .ba {
   position: relative;
   height: 280px;
@@ -97,7 +107,7 @@ section {
   transform: translateX(-50%);
 }
 
-/* CONTACT SECTION (GREEN BOTTOM) */
+/* CONTACT (GREEN BOTTOM) */
 .contact {
   background: #2e6a3a;
   color: white;
@@ -109,7 +119,7 @@ section {
   color: white;
 }
 
-/* BUTTON HOVER (optional upgrade) */
+/* BUTTON HOVER */
 .btn:hover {
   background: #24552d;
   transition: 0.3s ease;
