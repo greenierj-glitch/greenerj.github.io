@@ -66,24 +66,23 @@ section {
   box-shadow: 0 15px 40px rgba(0,0,0,.1);
 }
 
-/* BEFORE / AFTER CLEAN FIX */
 .ba {
   position: relative;
   height: 280px;
   overflow: hidden;
   border-radius: 18px;
-  box-shadow: 0 15px 40px rgba(0,0,0,.1);
 }
 
-/* base image (before) */
+/* BEFORE image (bottom layer) */
 .ba > img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
-/* after image overlay */
+/* AFTER image (top layer, half reveal) */
 .ba .after {
   position: absolute;
   top: 0;
@@ -91,14 +90,26 @@ section {
   width: 50%;
   height: 100%;
   overflow: hidden;
+  z-index: 2;
 }
 
 .ba .after img {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+  .ba {
+    height: 220px;
+  }
+
+  .ba .after {
+    width: 50%;
+  }
+}
+
 /* CONTACT (GREEN BOTTOM) */
 .contact {
   background: #2e6a3a;
