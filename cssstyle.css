@@ -145,3 +145,14 @@ section {
   text-align: center;
   padding: 60px 10%;
 }
+
+.merch {
+  text-align: center;
+  padding: 80px 10%;
+  background: #f5f3ee;
+}
+
+.merch p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
