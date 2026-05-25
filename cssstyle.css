@@ -110,6 +110,17 @@ section {
   }
 }
 
+.merch {
+  text-align: center;
+  padding: 80px 10%;
+  background: #f5f3ee;
+}
+
+.merch p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
 /* CONTACT (GREEN BOTTOM) */
 .contact {
   background: #2e6a3a;
