@@ -1,9 +1,9 @@
-/* GLOBAL */
 body {
   margin: 0;
   font-family: Inter, sans-serif;
   background: #f5f3ee;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 * {
@@ -58,23 +58,13 @@ section {
   font-size: 38px;
 }
 
-/* SERVICES (CENTER FIXED) */
-.services {
-  text-align: center;
-}
-
-.services .grid {
+/* GRID */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-
-  max-width: 900px;
-  margin: 40px auto 0 auto;
-
-  justify-content: center;
 }
 
-/* CARDS */
 .card {
   background: #fff;
   padding: 30px;
@@ -89,8 +79,6 @@ section {
   height: 280px;
   overflow: hidden;
   border-radius: 18px;
-  width: 100%;
-  max-width: 400px;
 }
 
 .ba > img {
@@ -127,16 +115,8 @@ section {
 /* MERCH */
 .merch {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.merch p {
-  max-width: 600px;
-  margin-bottom: 25px;
-  font-size: 18px;
+  padding: 80px 10%;
+  background: #f5f3ee;
 }
 
 /* CONTACT */
