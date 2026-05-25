@@ -67,10 +67,24 @@ section {
 }
 
 /* SERVICES GRID FIX */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers the title + grid */
+  text-align: center;
+}
+
 .services .grid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
-  max-width: 900px;
-  margin: 40px auto 0 auto;
+  gap: 20px;
+
+  justify-content: center;
+  justify-items: center;
+
+  width: 100%;
+  max-width: 900px;   /* stops full-width stretch */
+  margin-top: 40px;
 }
 
 /* CARDS */
