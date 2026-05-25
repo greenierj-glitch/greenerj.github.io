@@ -58,19 +58,8 @@ section {
   font-size: 38px;
 }
 
-/* GRID BASE (IMPORTANT FIX) */
-.grid {
-  display: grid;
-  gap: 20px;
-  justify-content: center;
-  justify-items: center;
-}
-
-/* SERVICES GRID FIX */
+/* SERVICES (CENTER FIXED) */
 .services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* centers the title + grid */
   text-align: center;
 }
 
@@ -79,12 +68,10 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
   gap: 20px;
 
-  justify-content: center;
-  justify-items: center;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
 
-  width: 100%;
-  max-width: 900px;   /* stops full-width stretch */
-  margin-top: 40px;
+  justify-content: center;
 }
 
 /* CARDS */
